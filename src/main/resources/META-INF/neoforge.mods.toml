@@ -1,0 +1,22 @@
+modLoader = "javafml"
+loaderVersion = "[2,)"
+license = "MIT"
+
+[[mods]]
+modId = "globalkeybinds"
+version = "${version}"
+displayName = "Global Keybinds"
+description = "Moves keybind config to a user directory"
+authors = "latvian.dev"
+logoFile = "globalkeybinds_logo.png"
+logoBlur = false
+
+[[dependencies.globalkeybinds]]
+modId = "neoforge"
+type = "required"
+versionRange = "[26.1.2,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[mixins]]
+config = "globalkeybinds.mixins.json"
